@@ -1,0 +1,27 @@
+<%= form_for(@store) do |f| %>
+  <div class = 'form-group'>
+    <%= f.label :name %>　<span class="input-need">※必須</span>
+    <%= f.text_field :name, class: 'form-control', id: 'store_name' %>
+  </div>
+  <div class = 'form-group'>
+    <%= f.label :adress %>　<span class="input-unneed">※必須</span>
+    <%= f.text_field :adress, size: "60x4", class: 'form-control', id: 'store_adress' %>
+  </div>
+  <div class = 'form-group'>
+    <%= f.label :business_hours %>　<span class="input-unneed">※任意</span>
+    <%= f.text_field :business_hours, size: "60x4", class: 'form-control', id: 'store_business_hours' %>
+  </div>
+  <div class = 'form-group'>
+    <%= f.label :regular_holiday %>　<span class="input-unneed">※任意</span>
+    <%= f.text_field :regular_holiday, size: "60x4", class: 'form-control', id: 'store_regular_holiday' %>
+  </div>
+  <div class = 'form-group'>
+    <%= f.label :description %>　<span class="input-unneed">※任意</span>
+    <%= f.text_field :description, size: "60x4", class: 'form-control', id: 'store_description' %>
+  </div>
+  <div class = 'form-group'>
+    <%= f.label :image %>　<span class="input-unneed">※任意</span>
+    <%= f.text_field :image, size: "60x4", class: 'form-control', id: 'image' %>
+  </div>
+  <%= f.submit nil, class: 'btn btn-primary' %>
+<% end %>
