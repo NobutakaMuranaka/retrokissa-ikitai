@@ -1,0 +1,13 @@
+ja:
+  activerecord:
+    models:
+      store: 店舗
+    attributes:
+      store:
+        id: ID
+        name: 店舗名
+        adress: 住所
+        business_hours: 営業時間
+        regular_holiday: 定休日
+        description: 説明
+        image: 画像

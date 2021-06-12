@@ -12,7 +12,8 @@ module RetrokissaIkitai
     # Application configuration should go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded.
     config.generators do |g|
-      （省略）
+      g.assets false          # CSS, JavaScriptファイルは生成しない
+      g.test_framework false  # testファイルは生成しない
       g.test_framework :rspec,
         controller_specs: false,
         view_specs: false,
