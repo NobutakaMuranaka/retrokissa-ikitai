@@ -9,7 +9,12 @@
       <h3 class="store-business_hours"><%= @store.business_hours %></h2>
       <h3 class="store-regular_holiday"><%= @store.regular_holiday %></h2>
       <h3 class="store-description"><%= @store.description %></h2>
-      <h3 class="store-image"><%= @store.image %></h2>
     </div>
+  </div>
+  <div class="change-store">
+        <%= link_to "編集", edit_store_path(@store), class: 'edit-store' %>　
+  </div>
+  <div class="destroy-store">
+        <%= link_to "削除", store_path(@store), class: 'destroy-store' %>
   </div>
 </div>
