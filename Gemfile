@@ -25,6 +25,12 @@ gem 'jbuilder', '~> 2.5'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
+gem 'carrierwave',             '1.2.2'  # 追記
+gem "mini_magick",             '>= 4.9.4'  # 追記
+
+gem 'fog-aws'  # 追記
+gem 'pry-rails'
+gem 'rb-readline'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console

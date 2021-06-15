@@ -14,10 +14,10 @@ class StoresController < ApplicationController
   def create
     @store = Store.new(store_params)
     if @store.save
-      flash[:success] = "料理が登録されました！"
+      flash[:success] = "店舗が登録されました！"
       redirect_to root_url
     else
-      render 'store/new'
+      render 'stores/new'
     end
   end
   
@@ -25,7 +25,6 @@ class StoresController < ApplicationController
 
     def store_params
       params.require(:store).permit(:name, :adress, :business_hours, :regular_holiday,
-                                   :description, :image)
+                                   :description, :image, :picture)
     end
-  
 end
