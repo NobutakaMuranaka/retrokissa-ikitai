@@ -1,5 +1,5 @@
 class Store < ApplicationRecord
     belongs_to :store
-    validates :store_id, presence: true
-    validates :adress, presence: true
+    default_scope -> { order(created_at: :desc) }
+    mount_uploader :picture, PictureUploader
 end

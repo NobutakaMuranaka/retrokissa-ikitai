@@ -1,11 +1,20 @@
 <% provide(:title, "#{@store.name}") %>
 <div class="container">
   <div class="row">
-    <h2 class="store-name"><%= @store.name %></h2>
-    <h3 class="store-adress"><%= @store.adress %></h2>
-    <h3 class="store-business_hours"><%= @store.business_hours %></h2>
-    <h3 class="store-regular_holiday"><%= @store.regular_holiday %></h2>
-    <h3 class="store-description"><%= @store.description %></h2>
-    <h3 class="store-image"><%= @store.image %></h2>
+    <div class="col-md-4">
+    </div>
+    <div class="col-md-8">
+      <h2 class="store-name"><%= @store.name %></h2>
+      <h3 class="store-adress"><%= @store.adress %></h2>
+      <h3 class="store-business_hours"><%= @store.business_hours %></h2>
+      <h3 class="store-regular_holiday"><%= @store.regular_holiday %></h2>
+      <h3 class="store-description"><%= @store.description %></h2>
+    </div>
+  </div>
+  <div class="change-store">
+        <%= link_to "編集", edit_store_path(@store), class: 'edit-store' %>　
+  </div>
+  <div class="destroy-store">
+        <%= link_to "削除", store_path(@store), class: 'destroy-store' %>
   </div>
 </div>
